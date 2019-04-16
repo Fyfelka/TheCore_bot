@@ -15,7 +15,7 @@ client.on('message', msg => {
   if (msg.content === '!thecourse') {
 	  msg.reply('Learn TheCore efficiently - https://docs.google.com/spreadsheets/d/1LhbxeYdkukOzYw030qNYQgLI1p3WUAbSTiuy1emeJSc/.')
   }
-  if (msg.content === '!thecourse') {
+  if (msg.content === '!handbook') {
 	  msg.reply('Insight on the TheCore ideas - https://docs.google.com/document/d/1reGIGIJ4W_MtfyoWjc2TJUeexswA4Jemy23jx0CSsKA/')
   }
   if (msg.content === '!tilt') {
