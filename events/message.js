@@ -33,4 +33,9 @@ module.exports = (client, msg) => {
 	if (msg.content === '!maps') {
 		msg.reply('List of all needed maps, with server-specific links availible in the pinned messages in #map-lab')
 	}
+	if (msg.content === '!tilt') {
+	const tilt = new Discord.Attachment('./images/tilt.jpg')
+	msg.reply('Most of the time tilting the keyboard will result in more comfortable experience. See image below, thank you Edennill!')
+	msg.channel.send(tilt)
+	}
 }
