@@ -23,16 +23,7 @@ module.exports = (client, msg) => {
 	if (msg.content === '!handbook') {
 		msg.reply('Insight on the TheCore ideas - https://docs.google.com/document/d/1reGIGIJ4W_MtfyoWjc2TJUeexswA4Jemy23jx0CSsKA/')
 	}
-	if (msg.content === '!tilt') {
-		const tilt = new Discord.Attachment('./images/tilt.jpg')
-		msg.reply('Most of the time tilting the keyboard will result in more comfortable experience. See image below, thank you Edennill!')
-		msg.channel.send(tilt)
-	}
-	if (msg.content === '!fingers') {
-		const map_l = new Discord.Attachment('./images/finger_map_L.png')
-		const map_r = new Discord.Attachment('./images/finger_map_R.png')
-		msg.channel.send(map_l)
-		msg.channel.send(map_r)
+
 	}
 	if (msg.content === '!plussetup') {
 		msg.reply('Looking how to setup TheCore+? Look here - https://docs.google.com/document/d/1aKCnVl90qck6HbSLQD3jw11bleuVBqtLpYSUb4rsvtI/.')
@@ -41,6 +32,6 @@ module.exports = (client, msg) => {
 		msg.reply('TheCoreLite, TheCore, TheCorePlus \n Easy, Medium, Hard \n Normal, Less Normal, Least Normal \n Effecient, More Efficient, Most Efficient.')
 	}
 	if (msg.content === '!maps') {
-		masg.reply('List of all needed maps, with server-specific links availible in the pinned messages in #map-lab')
+		msg.reply('List of all needed maps, with server-specific links availible in the pinned messages in #map-lab')
 	}
 }
