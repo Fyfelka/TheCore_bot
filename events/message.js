@@ -25,7 +25,6 @@ module.exports = (client, msg) => {
 	if (msg.content === '!handbook') {
 		msg.reply('Insight on the TheCore ideas - https://docs.google.com/document/d/1reGIGIJ4W_MtfyoWjc2TJUeexswA4Jemy23jx0CSsKA/')
 	}
-
 	if (msg.content === '!plussetup') {
 		msg.reply('Looking how to setup TheCore+? Look here - https://docs.google.com/document/d/1aKCnVl90qck6HbSLQD3jw11bleuVBqtLpYSUb4rsvtI/.')
 	}
@@ -45,5 +44,8 @@ module.exports = (client, msg) => {
 		const map_r = new Discord.Attachment('./images/finger_map_R.png')
 		msg.channel.send(map_l)
 		msg.channel.send(map_r)
+	}
+	if (msg.content === '!download') {
+		msg.reply('Download instructions: \n 1. Go here - https://drive.google.com/drive/folders/1sTddThP7q05L6RQBUZW2d51DSAztqOyg. \n 2. Pick your keyboard layout. \n 3.If you use mouse with right hand - choose right version, and vice versa. \n 4. If you have the ability to change the locations of Ctrl, Shift and Alt - pick the Plus version')
 	}
 }
