@@ -32,13 +32,13 @@ client.on('message', msg => {
 	  msg.reply('Insight on the TheCore ideas - https://docs.google.com/document/d/1reGIGIJ4W_MtfyoWjc2TJUeexswA4Jemy23jx0CSsKA/')
   }
   if (msg.content === '!tilt') {
-	  const tilt = new Discord.Attachment('./tilt.jpg')
+	  const tilt = new Discord.Attachment('./images/tilt.jpg')
 	  msg.reply('Most of the time tilting the keyboard will result in more comfortable experience. See image below, thank you Edennill!')
 	  msg.channel.send(tilt)
   }
   if (msg.content === '!fingers') {
-	  const map_l = new Discord.Attachment('./finger_map_L.png')
-	  const map_r = new Discord.Attachment('./finger_map_R.png')
+	  const map_l = new Discord.Attachment('./images/finger_map_L.png')
+	  const map_r = new Discord.Attachment('./images/finger_map_R.png')
 	  msg.channel.send(map_l)
 	  msg.channel.send(map_r)
   }
