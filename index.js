@@ -32,8 +32,8 @@ client.on('message', msg => {
   if (msg.content === '!plussetup') {
 	  msg.reply('Looking how to setup TheCore+? Look here - https://docs.google.com/document/d/1aKCnVl90qck6HbSLQD3jw11bleuVBqtLpYSUb4rsvtI/.')
   }
-  if (msg.contet === '!versions') {
-	  msg.reply('TheCoreLite, TheCore, TheCorePlus')
+  if (msg.content === '!versions') {
+	  msg.reply('TheCoreLite, TheCore, TheCorePlus \n Easy, Medium, Hard \n Normal, Less Normal, Least Normal \n Effecient, More Efficient, Most Efficient.')
   }
 })
 
