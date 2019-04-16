@@ -1,9 +1,9 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
-client.on(‘guildMemberAdd’, member => {
+/*client.on(‘guildMemberAdd’, member => {
   member.send('Welcome to TheCore discord server! You can find all documentation and FAQ here - https://drive.google.com/drive/folders/1ui2HNwaUa4FkHzRwATgXHNVEpolLNOzA.')
-})
+})*/
 
 client.on('message', msg => {
   if (msg.content === '!ping') {
