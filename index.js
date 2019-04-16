@@ -1,6 +1,9 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
+client.on(‘guildMemberAdd’, member => {
+  member.send('Welcome to TheCore discord server! You can find all documentation and FAQ here - https://drive.google.com/drive/folders/1ui2HNwaUa4FkHzRwATgXHNVEpolLNOzA.')
+})
 
 client.on('message', msg => {
   if (msg.content === '!ping') {
@@ -8,6 +11,12 @@ client.on('message', msg => {
   }
   if (msg.content === '!faq') {
 	  msg.reply('FAQ located here - https://docs.google.com/document/d/1QM1Acz96rtFeCz_UC_-gShbxA9Nrcpl-l1nJsulAz1w/. Read it, before asking questions.')
+  }
+  if (msg.content === '!banished') {
+	  msg.reply('Functions which set to Ctrl+Shift+Alt+key called banished.  Functions are banished when they are considered to form bad habits by default or if they’re considered unimportant/useless. Check out FAQ for more information here - https://docs.google.com/document/d/1QM1Acz96rtFeCz_UC_-gShbxA9Nrcpl-l1nJsulAz1w/.')
+  }
+  if (msg.content === '!rally') {
+	  msg.reply('The “different camera” is a rally camera or  “unlocked” camera. \n Setting a base camera automatically centers on selection, an undesirable feature for a camera you want to focus on what is often a terrain feature without any units or buildings yet.  So, the rally camera uses a different set of modifiers to set. Action sequence: \n 1. Ctrl+Camera - jumps to location \n 2. Ctrl+LClick - selects unit type \n 3. Ctrl+CG - add/steals to CG.')
   }
   if (msg.content === '!sheet') {
 	  msg.reply('TheCore Spreadsheet - https://docs.google.com/spreadsheets/d/1zN7ufgH79t6uaCXorX6cs3mWfkMKFC_6VTtZ7vH_9-s/. And remember - multiple tabs on the bottom. Enjoy!')
@@ -34,6 +43,9 @@ client.on('message', msg => {
   }
   if (msg.content === '!versions') {
 	  msg.reply('TheCoreLite, TheCore, TheCorePlus \n Easy, Medium, Hard \n Normal, Less Normal, Least Normal \n Effecient, More Efficient, Most Efficient.')
+  }
+  if (msg.content === '!maps') {
+	  masg.reply('List of all needed maps, with server-specific links availible in the pinned messages in #map-lab')
   }
 })
 
