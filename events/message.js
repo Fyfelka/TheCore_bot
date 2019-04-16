@@ -29,7 +29,7 @@ module.exports = (client, msg) => {
 		msg.reply('Looking how to setup TheCore+? Look here - https://docs.google.com/document/d/1aKCnVl90qck6HbSLQD3jw11bleuVBqtLpYSUb4rsvtI/.')
 	}
 	if (msg.content === '!versions') {
-		msg.reply('TheCoreLite, TheCore, TheCorePlus \n Easy, Medium, Hard \n Normal, Less Normal, Least Normal \n Effecient, More Efficient, Most Efficient.')
+		msg.reply('TheCoreLite, TheCore, TheCorePlus. \n Easy, Medium, Hard. \n Normal, Less Normal, Least Normal. \n Effecient, More Efficient, Most Efficient.')
 	}
 	if (msg.content === '!maps') {
 		msg.reply('List of all needed maps, with server-specific links availible in the pinned messages in #map-lab')
@@ -46,6 +46,6 @@ module.exports = (client, msg) => {
 		msg.channel.send(map_r)
 	}
 	if (msg.content === '!download') {
-		msg.reply('Download instructions: \n 1. Go here - https://drive.google.com/drive/folders/1sTddThP7q05L6RQBUZW2d51DSAztqOyg. \n 2. Pick your keyboard layout. \n 3.If you use mouse with right hand - choose right version, and vice versa. \n 4. If you have the ability to change the locations of Ctrl, Shift and Alt - pick the Plus version')
+		msg.reply('Download instructions: \n 1. Go here - https://drive.google.com/drive/folders/1sTddThP7q05L6RQBUZW2d51DSAztqOyg. \n 2. Pick your keyboard layout. \n 3. If you use mouse with right hand - choose right version, and vice versa. \n 4. If you have the ability to change the locations of Ctrl, Shift and Alt - pick the Plus version')
 	}
 }
