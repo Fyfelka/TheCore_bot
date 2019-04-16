@@ -16,7 +16,7 @@ client.on('message', msg => {
 	  msg.reply('Functions which set to Ctrl+Shift+Alt+key called banished.  Functions are banished when they are considered to form bad habits by default or if they’re considered unimportant/useless. Check out FAQ for more information here - https://docs.google.com/document/d/1QM1Acz96rtFeCz_UC_-gShbxA9Nrcpl-l1nJsulAz1w/.')
   }
   if (msg.content === '!rally') {
-	  msg.reply('The “different camera” is a rally camera or  “unlocked” camera. \n Setting a base camera automatically centers on selection, an undesirable feature for a camera you want to focus on what is often a terrain feature without any units or buildings yet.  So, the rally camera uses a different set of modifiers to set. Action sequence: \n 1. Ctrl+Camera - jumps to location \n 2. Ctrl+LClick - selects unit type \n 3. Ctrl+CG - add/steals to CG.')
+	  msg.reply('The “different camera” is a rally camera or  “unlocked” camera. \n Setting a base camera automatically centers on selection, an undesirable feature for a camera you want to focus on what is often a terrain feature without any units or buildings yet.  So, the rally camera uses a different set of modifiers to set. Action sequence: \n 1. Ctrl+Camera - jumps to location \n 2. Ctrl+LClick - selects unit type \n 3. Ctrl+CG - add/steals to CG. \n Check out FAQ for more information here - https://docs.google.com/document/d/1QM1Acz96rtFeCz_UC_-gShbxA9Nrcpl-l1nJsulAz1w/.')
   }
   if (msg.content === '!sheet') {
 	  msg.reply('TheCore Spreadsheet - https://docs.google.com/spreadsheets/d/1zN7ufgH79t6uaCXorX6cs3mWfkMKFC_6VTtZ7vH_9-s/. And remember - multiple tabs on the bottom. Enjoy!')
