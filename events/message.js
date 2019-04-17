@@ -1,15 +1,16 @@
 const Discord = require('discord.js')
 
 module.exports = (client, msg) => {
-	if (msg.content === '!author') {
-		const fyfelka = msg.author
+	if (msg.content.startsWith('!author')) {
+		const member = msg.mentions.members.first()
+		member.send('Hello')
 	}
 	
-	if (msg.content === '!goodboy') {
+	/*if (msg.content === '!goodboy') {
 		if (msg.author === fyfelka) {
 			const boy = new Discord.Attachment('./images/good_boy.gif')
 		}
-	}
+	}*/
 	if (msg.content === '!ping') {
 		msg.reply('Pong!')
 	}
