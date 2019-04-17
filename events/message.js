@@ -2,11 +2,11 @@ const Discord = require('discord.js')
 
 module.exports = (client, msg) => {
 	if (msg.content === '!author') {
-		const fyfelka = msg.author.id
+		const fyfelka = msg.author
 	}
 	
 	if (msg.content === '!goodboy') {
-		if (msg.author.id === fyfelka) {
+		if (msg.author === fyfelka) {
 			const boy = new Discord.Attachment('./images/good_boy.gif')
 		}
 	}
