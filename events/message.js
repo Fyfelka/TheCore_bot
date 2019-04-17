@@ -1,6 +1,15 @@
 const Discord = require('discord.js')
 
 module.exports = (client, msg) => {
+	if (msg.content === '!author') {
+		const fyfelka = msg.author.id
+	}
+	
+	if (msg.content === '!goodboy') {
+		if (msg.author.id === fyfelka) {
+			const boy = new Discord.Attachment('./images/good_boy.gif')
+		}
+	}
 	if (msg.content === '!ping') {
 		msg.reply('Pong!')
 	}
@@ -46,6 +55,6 @@ module.exports = (client, msg) => {
 		msg.channel.send(map_r)
 	}
 	if (msg.content === '!download') {
-		msg.reply('Download instructions: \n 1. Go here - https://drive.google.com/drive/folders/1sTddThP7q05L6RQBUZW2d51DSAztqOyg. \n 2. Pick your keyboard layout. \n 3. If you use mouse with right hand - choose right version, and vice versa. \n 4. If you have the ability to change the locations of Ctrl, Shift and Alt - pick the Plus version')
+		msg.reply('Download instructions: \n TheCore and TheCorePlus \n 1. Go here - https://drive.google.com/drive/folders/1sTddThP7q05L6RQBUZW2d51DSAztqOyg. \n 2. Pick your keyboard layout. \n 3. If you use mouse with right hand - choose right version, and vice versa. \n 4. If you have the ability to change the locations of Ctrl, Shift and Alt - pick the Plus version. \n TheCoreLite \n 1. Go here - https://github.com/bobo38/TheCoreLite/. \n 2. Click green button:"Clone or download".')
 	}
 }
