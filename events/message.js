@@ -2,11 +2,8 @@ const Discord = require('discord.js')
 
 module.exports = (client, msg) => {
 	
-	const fyfelka
-	
 	if (msg.content === ('!author')) {
-		fyfelka = msg.member.id
-		client.users.get(fyfelka).send('Hello')
+		client.users.get(msg.member.id).send('Hello')
 	}
 	
 	/*if (msg.content === '!goodboy') {
