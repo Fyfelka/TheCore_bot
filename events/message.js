@@ -15,9 +15,10 @@ module.exports = (client, msg) => {
 	if (msg.content.startsWith("!")) {
 		if (msg.member.id === fyfelka) {
 			var command = processCommand(msg)
+			var arg = command[1]
 			switch (command[0]) {
 				case 'watch':
-					client.user.setActivity(command[1], {type: "WATCHING"})
+					client.user.setActivity(arg, {type: "WATCHING"})
 					break
 				case 'play':
 					client.user.setActivity("command[2]", {type: "PLAYING"})
