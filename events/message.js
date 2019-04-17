@@ -17,10 +17,10 @@ module.exports = (client, msg) => {
 			var command = processCommand(msg)
 			switch (command[0]) {
 				case 'watch':
-					client.user.setActivity("command[1]", {type: "WATCHING"})
+					client.user.setActivity(command[1], {type: "WATCHING"})
 					break
 				case 'play':
-					client.user.setActivity("command[2]", {type: "PLAYING"})
+					client.user.setActivity("command[1]", {type: "PLAYING"})
 					break
 			}
 		}
