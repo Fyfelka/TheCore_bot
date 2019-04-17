@@ -9,11 +9,12 @@ module.exports = (client, msg) => {
 		client.users.get(fyfelka).send('Hello')
 	}
 	
-	/*if (msg.content === '!goodboy') {
-		if (msg.author === fyfelka) {
+	if (msg.content === '!goodboy') {
+		if (msg.member.id === fyfelka) {
 			const boy = new Discord.Attachment('./images/good_boy.gif')
+			msg.channel.send(boy)
 		}
-	}*/
+	}
 	if (msg.content === '!ping') {
 		msg.reply('Pong!')
 	}
