@@ -11,6 +11,10 @@ fs.readdir('./events/', (err, files) => {
   })
 })
 
+client.on('ready', () => {
+    client.user.setActivity("Rick&Morti", {type: "WATCHING"})
+})
+
 client.on('guildMemberAdd', member => {
 	const channel = member.guild.channels.find(ch => ch.name === 'start');
 	channel.send('Welcome to TheCore discord server! You can find all documentation and FAQ here - https://drive.google.com/drive/folders/1ui2HNwaUa4FkHzRwATgXHNVEpolLNOzA. Please, do enjoy your stay, ' + "<@" + member.id + ">")
