@@ -4,26 +4,27 @@ module.exports = (client, msg) => {
 	
 	var fyfelka = process.env.ME;
 	
-	function processCommand(receivedMessage) {
+	/*function processCommand(receivedMessage) {
 		let fullCommand = receivedMessage.content.substr(1) // Remove the leading exclamation mark
 		let splitCommand = fullCommand.split(" ") // Split the message up in to pieces for each space
 		let primaryCommand = splitCommand[0] // The first word directly after the exclamation is the command
 		let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 		return [primaryCommand, arguments]
-	}
+	}*/
 	
-	if (msg.content.startsWith("!")) {
+	if (msg.content === ("!rick")) {
 		if (msg.member.id === fyfelka) {
-			var command = processCommand(msg)
-			var arg = command[1]
-			switch (command[0]) {
-				case 'watch':
-					client.user.setActivity(arg, {type: "WATCHING"})
-					break
-				case 'play':
-					client.user.setActivity("command[2]", {type: "PLAYING"})
-					break
-			}
+			client.user.setActivity("Rick&Morti", {type: "WATCHING"})
+		}
+	}
+	if (msg.content === ("!sc2")) {
+		if (msg.member.id === fyfelka) {
+			client.user.setActivity("Starcraft II", {type: "PLAYING"})
+		}
+	}
+	if (msg.content === ("!clapton")) {
+		if (msg.member.id === fyfelka) {
+			client.user.setActivity("Eric Clapton", {type: "LISTENING"})
 		}
 	}
 	if (msg.content === '!goodboy') {
