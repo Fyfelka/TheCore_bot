@@ -8,6 +8,8 @@ module.exports = (client, msg) => {
 		if (msg.member.id === fyfelka) {
 			const boy = new Discord.Attachment('./images/good_boy.gif')
 			msg.channel.send(boy)
+		} else {
+			msg.reply('I am not your boy')
 		}
 	}
 	if (msg.content === '!ping') {
