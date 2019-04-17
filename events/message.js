@@ -20,7 +20,7 @@ module.exports = (client, msg) => {
 					client.user.setActivity(command[1], {type: "WATCHING"})
 					break
 				case 'play':
-					client.user.setActivity("command[1]", {type: "PLAYING"})
+					client.user.setActivity("command[2]", {type: "PLAYING"})
 					break
 			}
 		}
