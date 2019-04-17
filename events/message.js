@@ -2,12 +2,12 @@ const Discord = require('discord.js')
 
 module.exports = (client, msg) => {
 	
-	var fyfelka;
+	var fyfelka = '259897016845336577';
 	
-	if (msg.content === ('!author')) {
+	/*if (msg.content === ('!author')) {
 		fyfelka = msg.member.id
 		client.users.get(fyfelka).send('Hello')
-	}
+	}*/
 	
 	if (msg.content === '!goodboy') {
 		if (msg.member.id === fyfelka) {
