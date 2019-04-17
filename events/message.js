@@ -17,11 +17,6 @@ module.exports = (client, msg) => {
 			client.user.setActivity("Rick&Morti", {type: "WATCHING"})
 		}
 	}
-	if (msg.content === ('!sc2')) {
-		if (msg.member.id === fyfelka) {
-			client.user.setActivity("Starcraft II", {type: "PLAYING"})
-		}
-	}
 	if (msg.content === ('!clapton')) {
 		if (msg.member.id === fyfelka) {
 			client.user.setActivity("Eric Clapton", {type: "LISTENING"})
