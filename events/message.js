@@ -16,7 +16,7 @@ module.exports = (client, msg) => {
 		msg.reply('Pong!')
 	}
 	if (msg.content === '!intro') {
-		msg.reply('Hello, my name is TheCore_bot, and I pass butter. For more information please to #bot-commands')
+		msg.reply('Hello, my name is TheCore_bot, and I pass butter. For more information please refer to #bot-commands')
 	}
 	if (msg.content === '!faq') {
 		msg.reply('FAQ located here - https://docs.google.com/document/d/1QM1Acz96rtFeCz_UC_-gShbxA9Nrcpl-l1nJsulAz1w/. Read it, before asking questions.')
